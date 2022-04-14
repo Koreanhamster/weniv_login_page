@@ -1,0 +1,355 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.wrapper {
+  position: relative;
+  width: 520px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background-color: white;
+  margin: 100px auto;
+  text-align: center;
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+.title {
+  border-bottom: 1px solid #c4c4c4;
+  padding: 19px 0 18px 0;
+}
+
+.main {
+  padding: 26px 23px 24px 23px;
+}
+
+.greeting {
+  margin-bottom: 24px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.id,
+.pwd {
+  display: block;
+  width: 472px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 14px 0 14px 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+input[class="id"]:focus,
+input[class="pwd"]:focus {
+  outline: 2px solid #2f80ed;
+}
+
+.align-left {
+  text-align: left;
+  color: #767676;
+  margin: 16px 0 20px 0;
+}
+
+input[id="chkbox"] {
+  display: none;
+}
+
+input[id="chkbox"] + label em {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  background: url(./images/check-box.svg) 0 0 no-repeat;
+  vertical-align: sub;
+  cursor: pointer;
+}
+
+input[id="chkbox"]:checked + label em {
+  background: url(./images/checked-box.svg);
+  transition: all ease 0.3s 0s;
+}
+
+.login-btn {
+  color: white;
+  border: none;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 472px;
+  padding: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #2c78db;
+}
+
+.sign-in,
+.find-account {
+  display: inline-block;
+  color: #767676;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.sign-in::after {
+  content: "";
+  margin: 0 12px;
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  border-right: 1px solid #767676;
+  vertical-align: -2px;
+}
+
+.or-text::before {
+  content: "";
+  width: 210px;
+  height: 1px;
+  border-top: 1px solid #c4c4c4;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.or-text {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 20px;
+}
+
+.or-text::after {
+  content: "";
+  width: 210px;
+  height: 1px;
+  border-top: 1px solid #c4c4c4;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+ul a[class$="login"] {
+  color: #767676;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+ul a[class$="login"]::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+ul a[class$="login"]:hover {
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+ul a[class^="facebook"] {
+  border-color: #2f80ed;
+}
+
+ul a[class^="naver"] {
+  border-color: #00bf18;
+}
+
+ul a[class^="kakao"] {
+  border-color: #f2c94c;
+  margin-bottom: 0;
+}
+
+ul .google-login::before {
+  background: url(./images/css_sprites.png) -10px -10px;
+}
+
+ul .facebook-login::before {
+  background: url(./images/css_sprites.png) -58px -10px;
+}
+
+ul .naver-login::before {
+  background: url(./images/css_sprites.png) -10px -58px;
+}
+
+ul .kakao-login::before {
+  background: url(./images/css_sprites.png) -58px -58px;
+}
+
+.close-btn {
+  position: absolute;
+  border: none;
+  background: transparent;
+  top: 19px;
+  right: 23px;
+}
+
+.close-btn img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

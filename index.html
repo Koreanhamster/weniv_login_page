@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weniv-login</title>
+    <style>
+      @font-face {
+        font-family: "SpoqaHanSansNeo-Regular";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .blind {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: "SpoqaHanSansNeo-Regular";
+        background-color: #f2f2f2;
+      }
+
+      .wrapper {
+        width: 500px;
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        background-color: white;
+        margin: 270px auto;
+        text-align: center;
+        padding: 29px;
+      }
+
+      .logo-img {
+        margin-bottom: 28px;
+      }
+
+      .greeting-text {
+        margin-bottom: 32px;
+      }
+
+      .login-btn {
+        display: block;
+        text-decoration: none;
+        font-size: 22px;
+        background: #2f80ed;
+        border-radius: 5px;
+        color: white;
+        padding: 17px 0 15px 0;
+      }
+
+      .login-btn:hover {
+        background: #276cc6;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="wrapper">
+      <h2 class="blind">위니브 로그인</h2>
+      <img class="logo-img" src="images/weniv-logo.svg" alt="weniv-logo" />
+      <p class="greeting-text">위니브를 더 즐겁고 편리하게 이용하세요</p>
+      <a class="login-btn" href="login-page.html">로그인</a>
+    </article>
+  </body>
+</html>
