@@ -4,9 +4,9 @@
 */
 
 @font-face {
-  font-family: "SpoqaHanSansNeo-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
-    format("woff");
+  font-family: 'SpoqaHanSansNeo-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff')
+    format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +137,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -163,7 +163,7 @@ a {
   background-color: white;
   margin: 100px auto;
   text-align: center;
-  font-family: "SpoqaHanSansNeo-Regular";
+  font-family: 'SpoqaHanSansNeo-Regular';
 }
 
 .title {
@@ -193,8 +193,8 @@ a {
   cursor: pointer;
 }
 
-input[class="id"]:focus,
-input[class="pwd"]:focus {
+input[class='id']:focus,
+input[class='pwd']:focus {
   outline: 2px solid #2f80ed;
 }
 
@@ -204,11 +204,11 @@ input[class="pwd"]:focus {
   margin: 16px 0 20px 0;
 }
 
-input[id="chkbox"] {
+input[id='chkbox'] {
   display: none;
 }
 
-input[id="chkbox"] + label em {
+input[id='chkbox'] + label em {
   display: inline-block;
   width: 22px;
   height: 22px;
@@ -218,7 +218,7 @@ input[id="chkbox"] + label em {
   cursor: pointer;
 }
 
-input[id="chkbox"]:checked + label em {
+input[id='chkbox']:checked + label em {
   background: url(./images/checked-box.svg);
   transition: all ease 0.3s 0s;
 }
@@ -250,7 +250,7 @@ input[id="chkbox"]:checked + label em {
 }
 
 .sign-in::after {
-  content: "";
+  content: '';
   margin: 0 12px;
   display: inline-block;
   width: 1px;
@@ -260,35 +260,30 @@ input[id="chkbox"]:checked + label em {
 }
 
 .or-text::before {
-  content: "";
-  width: 210px;
+  content: '';
+  flex-grow: 1;
   height: 1px;
-  border-top: 1px solid #c4c4c4;
-  position: absolute;
-  top: 5px;
-  left: 0;
+  background-color: #c4c4c4;
+  opacity: 0.4;
 }
+
 .or-text {
-  display: block;
-  position: relative;
-  font-size: 14px;
-  font-weight: 400;
-  font-size: 14px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
   color: #767676;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .or-text::after {
-  content: "";
-  width: 210px;
+  content: '';
+  flex-grow: 1;
   height: 1px;
-  border-top: 1px solid #c4c4c4;
-  position: absolute;
-  top: 5px;
-  right: 0;
+  background-color: #c4c4c4;
+  opacity: 0.4;
 }
 
-ul a[class$="login"] {
+ul a[class$='login'] {
   color: #767676;
   border: 1px solid #767676;
   border-radius: 5px;
@@ -297,8 +292,8 @@ ul a[class$="login"] {
   margin-bottom: 10px;
 }
 
-ul a[class$="login"]::before {
-  content: "";
+ul a[class$='login']::before {
+  content: '';
   width: 28px;
   height: 28px;
   float: left;
@@ -306,20 +301,20 @@ ul a[class$="login"]::before {
   margin-top: 10px;
 }
 
-ul a[class$="login"]:hover {
+ul a[class$='login']:hover {
   color: #4e4e4e;
   font-weight: 500;
 }
 
-ul a[class^="facebook"] {
+ul a[class^='facebook'] {
   border-color: #2f80ed;
 }
 
-ul a[class^="naver"] {
+ul a[class^='naver'] {
   border-color: #00bf18;
 }
 
-ul a[class^="kakao"] {
+ul a[class^='kakao'] {
   border-color: #f2c94c;
   margin-bottom: 0;
 }
