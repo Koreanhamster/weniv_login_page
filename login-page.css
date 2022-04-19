@@ -299,6 +299,8 @@ ul a[class$='login']::before {
   float: left;
   margin-left: 10px;
   margin-top: 10px;
+
+  background-size: 76px 76px;
 }
 
 ul a[class$='login']:hover {
@@ -320,19 +322,19 @@ ul a[class^='kakao'] {
 }
 
 ul .google-login::before {
-  background: url(./images/css_sprites.png) -10px -10px;
+  background: url(./images/css_sprites_Retina.png) -5px -5px;
 }
 
 ul .facebook-login::before {
-  background: url(./images/css_sprites.png) -58px -10px;
+  background: url(./images/css_sprites_Retina.png) -43px -5px;
 }
 
 ul .naver-login::before {
-  background: url(./images/css_sprites.png) -10px -58px;
+  background: url(./images/css_sprites_Retina.png) -5px -43px;
 }
 
 ul .kakao-login::before {
-  background: url(./images/css_sprites.png) -58px -58px;
+  background: url(./images/css_sprites_Retina.png) -43px -43px;
 }
 
 .close-btn {
